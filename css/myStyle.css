@@ -94,6 +94,11 @@ Image style
         clip-path: polygon(0 0, 57% 0, 100% 100%, 0% 100%);
     }
 
+    .hero{
+        height: 90vh;
+    }
+    
+
 }
 
 .intro-img{
@@ -357,9 +362,6 @@ Banner style
     filter: brightness(100%);
 }
 
-.hero{
-    height: 90vh;
-}
 
 
 
