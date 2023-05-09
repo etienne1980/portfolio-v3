@@ -1,12 +1,12 @@
 
 @font-face{
     font-family: custom_header;
-    src: url(../assets/fonts/AbrilFatface-Regular.woff2);
+    src: url(../assets/fonts/AbrilFatface-Regular.woff2) format('woff2');
 }
 
 @font-face{
     font-family: custom_body;
-    src: url(../assets/fonts/Poppins-Regular.woff2);
+    src: url(../assets/fonts/Poppins-Regular.woff2) format('woff2');
 }
 
 
