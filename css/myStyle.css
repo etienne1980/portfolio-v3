@@ -357,6 +357,10 @@ Banner style
     filter: brightness(100%);
 }
 
+.hero{
+    height: 90vh;
+}
+
 
 
   
