@@ -95,11 +95,13 @@ Image style
     }
 
     .hero{
-        height: 90vh;
+        height: 80vh;
     }
     
 
 }
+
+
 
 .intro-img{
     position: relative;
