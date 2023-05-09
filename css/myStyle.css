@@ -72,7 +72,7 @@ h1{
     font-size: var(--fs-700) !important;
 }
 
-h3{
+h2{
     font-family: custom_header !important;
     font-size: var(--fs-600) !important;
 }
