@@ -37,7 +37,8 @@
     /* font size */
     --fs-700: clamp(1.8rem, 10vw, 2.9rem);
     --fs-600: clamp(1.5rem,10vw,2.2rem);
-    --fs-500: clamp(1rem,10vw,1.2rem);
+    --fs-500: clamp(0.8rem,10vw,1.2rem);
+    --fs-400: clamp(1rem,10vw,0.9rem);
 
     /* typo styles */
 
@@ -57,8 +58,8 @@ Body style
 =========================*/
 
 body{
-    font-family: custom_body;
-    font-size: var(--fs-500);
+    font-family: custom_body !important;
+    font-size: var(--fs-500) !important;
 }
 
 
@@ -74,6 +75,11 @@ h1{
 h3{
     font-family: custom_header !important;
     font-size: var(--fs-600) !important;
+}
+
+h4{
+    font-family: custom_body !important;
+    font-size: var(--fs-400) !important;
 }
 
 /*=========================
