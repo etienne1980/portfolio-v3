@@ -1,81 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
 
-    <!-- seo -->
-    <meta name="description" content="How to use Javascript to make a burger menu">
-    <meta name="keyword" content="Javascript, burger menu">
-    <title>Sidebar menu</title>
-
-    <!-- preload -->
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="preload" href="js/reviews.js" as="script">
-
-    <!-- fa icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-    <button class="toggle-menu">
-        <i class="fa-solid fa-bars"></i>
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button class="sidebar-toggle">
+      <i class="fas fa-bars"></i>
     </button>
-
-    <header id="sidebar-menu">
-
-        <div class="logo">
-
-            <a class="logo-text" href="#">yogaLab</a>
-
-            <a id="close-sidebar" class="close-sidebar">
-                <i class="fa-regular fa-circle-xmark"></i>
-            </a>
-
-        </div>
-
-        <ul class="links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">color</a></li>
-            <li><a href="#">season</a></li>
-            <li><a href="#">product</a></li>
-        </ul>
-
-        <ul class="social-icon">
-            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-        </ul>
-
-    </header>
-
-    <!-- breadcrumbs -->
-    <ul class="breadcrumbs">
-        <li><a href="../../index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
-        <li> > </li>
-        <li><a href="../../javascript.html">Javascript Projects</a></li>
-        <li> > </li>
-        <li class="active"><a href="#"></a>Offcanvas Nav</li>
-    </ul>
-        
-        
-        
-
-    <main>
-        <h1>Click on the Toggle menu icon to unveil the navigation menu</h1>
-        <h4>Whatch out to your right!! 😄</h4>
-    </main>
-
-
-
-
-
-
-
- 
-    <script src="js/menu.js"></script>
-</body>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="logo.svg" class="logo" alt="" />
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <!-- links -->
+      <ul class="links">
+        <li>
+          <a href="index.html">home</a>
+        </li>
+        <li>
+          <a href="about.html">about</a>
+        </li>
+        <li>
+          <a href="projects.html">projects</a>
+        </li>
+        <li>
+          <a href="contact.html">contact</a>
+        </li>
+      </ul>
+      <!-- social media -->
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-behance"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-sketch"></i>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
 </html>
