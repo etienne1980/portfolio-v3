@@ -1,6 +1,6 @@
 // setting up array with 8 objects (quantity = number of menu cards)
 
-let menuElements = [
+let menuArray = [
 
     {
         id: 1,
@@ -85,115 +85,99 @@ let menuElements = [
 // getting the entire menu layout. I'll inject all the html code later on
 let menuAreaLayout = document.querySelector('.menu-layout');
 
-// getting the btn container to inject html code
 
-let buttonContainer = document.querySelector('.btn-container');
+let showMenu = function(menuArray){
 
-/* 
-    ==========================================
-    function to load array element on dom load
-    ==========================================
-*/
-
-
-let showMenu = function(menuElements){
-
-    let displayMenu = menuElements.map(item=>{
+    let displayMenu = menuArray.map(item=>{
         return `<article class="card">
-                    <picture>
-                        <source media="(max-width:576.9px)" srcset="${item.mobileImg}">
-                        <source media="(min-width:577px)" srcset="${item.img}">
-                        <img class="card-photo" src="${item.img}" alt="${item.title} picture">
-                    </picture>
 
-                    <div class="card-body">
+                <picture>
+                    <source media="(max-width:576.9px)" srcset="${item.mobileImg}">
+                    <source media="(min-width:577px)" srcset="${item.img}">
+                    <img class="card-photo" src="${item.img}" alt="buttermilk cake picture">
+                </picture>
 
-                        <div class="card-title">
-                            <h4 class="menu-item-title">${item.title}</h4>
-                            <h4 class="price">${item.price}</h4>
-                        </div>
+                <div class="card-body">
 
-                        <p class="card-description">${item.description}</p>
+                    <div class="card-title">
+                        <h4 class="menu-item-title">${item.title}</h4>
+                        <h4 class="price">${item.price}</h4>
                     </div>
-                </article>`
 
+                    <p class="card-description">${item.description}</p>
+                </div>
+            </article>`;
     })
 
-    
     displayMenu = displayMenu.join('');
-  
-    menuAreaLayout.innerHTML = displayMenu;
+
+    menuAreaLayout.innerHTML = displayMenu
+
 }
 
 
-/* 
-    ========================
-    event on loading window
-    ========================
-*/
-
-
 window.addEventListener('DOMContentLoaded',()=>{
-    showMenu(menuElements);
-    displayMenuButtons();
+    showMenu(menuArray);
+    displayMenuButton();
+   
 
 });
 
-let displayMenuButtons = function(){
-    let category = menuElements.reduce((value,item)=>{
-        if(!value.includes(item.category)){
-            value.push(item.category)
+
+
+let displayMenuButton = function(){
+
+    let uniqueMenuCategory = menuArray.reduce((category,menuArrayItem)=>{
+
+        if(!category.includes(menuArrayItem.category)){
+            category.push(menuArrayItem.category);
         }
-        return value
-    },['all']);
 
-    let categoryButtons = category.map(category=>{
-           return  `<button type="button" class="filter-btn" data-id="${category}">${category}</button>`;
-            
-    })
+    return category
 
-    categoryButtons = categoryButtons.join('');
+   },['all']);
 
-    console.log(categoryButtons);
+   console.log(uniqueMenuCategory);
 
-    buttonContainer.innerHTML = categoryButtons
+   let categoryButtons = uniqueMenuCategory.map(item=>{
+    return `<button type="button" class="filter-btn" data-id="${item}">${item}</button>`
+    
+   })
 
-    // getting filter buttons
+   let btnContainer = document.querySelector('.btn-container');
 
-    let filterButtons = document.querySelectorAll('.filter-btn');
+   btnContainer.innerHTML = categoryButtons.join('');
+
+   let filterButtons = document.querySelectorAll('.filter-btn');
 
 
-/* 
-    ========================
-    filter functionality
-    ========================
-*/
+    /*=======================
+    Filter buttons selections
+    =========================*/
 
-filterButtons.forEach(button=>{
-    button.addEventListener('click',(e)=>{
-        let btnCategory = e.target.dataset.id;
-        console.log(btnCategory);
 
-        let menuCategory = menuElements.filter(menuItem=>{
-            if(menuItem.category === btnCategory){
-                
-                return menuItem
-            }
-        })
+    filterButtons.forEach(item=>{
 
-        // console.log(menuCategory);
+        item.addEventListener('click',(e)=>{
+            let categoryOnButton = e.target.dataset.id;
+            console.log(categoryOnButton);
 
-            if(btnCategory === 'all'){
-                showMenu(menuElements);
+            let menuCardFiltered = menuArray.filter(menuArrayItem=>{
+                if(categoryOnButton === menuArrayItem.category){
+                    return menuArrayItem;
+                }
+            })
+
+            if(categoryOnButton === 'all'){
+                showMenu(menuArray);
             }else{
-                showMenu(menuCategory);
+                showMenu(menuCardFiltered);
             }
 
         });
     });
-}
 
-
+};
 
 
 
