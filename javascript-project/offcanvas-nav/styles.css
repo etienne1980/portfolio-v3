@@ -257,3 +257,22 @@ Sidebar
     width: 400px;
   }
 }
+
+
+/* breadcrumbs */
+
+.breadcrumbs{
+  display: flex;
+  list-style: none;
+  margin-top: 2.5rem;
+
+}
+
+.breadcrumbs li{
+  margin: 0 10px;
+}
+
+.breadcrumbs li a{
+  text-decoration: none;
+  color: var(--clr-primary-4);
+}

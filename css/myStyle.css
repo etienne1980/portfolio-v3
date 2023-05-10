@@ -321,7 +321,7 @@ Banner style
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     max-width: 90%;
     height: 70%;
     padding: 1rem;
@@ -337,7 +337,7 @@ Banner style
 
     background-position: center;
     z-index: -1;
-    opacity: .5;
+    opacity: .9;
 }
 
 .title-404{
