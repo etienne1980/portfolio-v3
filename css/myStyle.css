@@ -283,6 +283,7 @@ Breadcrumb style
     font-size: var(--bc-size);
     color: var(--text-clr-over-dark);
     filter: brightness(90%);
+    font-family: custom_body;
 }
 
 .breadcrumb i{
