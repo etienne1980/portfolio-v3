@@ -190,7 +190,14 @@ Menu
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
+
+.btn-container > *{
+  margin: 10px;
+}
+
+
 .filter-btn {
   background: transparent;
   border-color: var(--clr-gold);
