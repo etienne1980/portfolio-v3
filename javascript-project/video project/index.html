@@ -7,29 +7,51 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- fawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
   <body>
+
     <!-- preloader -->
     <div class="preloader">
       <img src="preloader.gif" alt="preloader" class="preloader__item" />
     </div>
+
+
+     <!-- breadcrumbs -->
+     <ul class="breadcrumbs">
+      <li><a href="../../index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+      <li> > </li>
+      <li><a href="../../javascript.html">Javascript Projects</a></li>
+      <li> > </li>
+      <li><a href="#"></a>Video Project</li>
+    </ul>
+
+
     <!-- header -->
     <header>
-      <video controls muted autoplay loop class="video-container">
-        <source src="./video.mp4" type="video/mp4" />
-      </video>
-      <h1>video project</h1>
-      <!-- video switch -->
-      <button class="switch-btn">
-        <span>
-          play
-        </span>
-        <span>
-          pause
-        </span>
-        <span class="switch"></span>
-      </button>
+
+        <video  muted autoplay loop class="video-container">
+          <source src="./video.mp4" type="video/mp4" />
+        </video>
+
+        <div>
+          <h1>video project</h1>
+          <p class="description">Added video controls and preloader</p>
+        </div>
+
+        <!-- video switch -->
+        <button class="switch-btn">
+          <span>play</span>
+          <span>pause</span>
+          <span class="switch"></span>
+        </button>
+
     </header>
+
+
+
     <!-- javascript -->
     <script src="app.js"></script>
   </body>
