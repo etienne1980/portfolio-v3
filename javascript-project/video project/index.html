@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- seo -->
+    <meta name="description" content="How to use Javascript to make a burger menu">
+    <meta name="keyword" content="Javascript, burger menu">
+    <title>Menu</title>
+
+    <!-- preload -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/reviews.js" as="script">
+
+    <!-- fa icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- preloader -->
+    <div class="preloader">
+        <img src="img/preloader.gif" alt="preloader image">
+    </div>
+
+    <div class="layout">
+
+
+        <!-- breadcrumbs -->
+        <ul class="breadcrumbs">
+            <li><a href="../../index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+            <li> > </li>
+            <li><a href="../../javascript.html">Javascript Projects</a></li>
+            <li> > </li>
+            <li><a href="#"></a>Video project</li>
+        </ul>
+
+
+
+        <!-- header -->
+        <header>
+
+                <video class="video-container" muted autoplay loop>
+                    <source src="assets/video.mp4" type="video/mp4">
+                </video>
+
+                <div class="body-text">
+                    <h1>Video Project</h1>
+                    <p>Added controls (play/pause buttons) and video preloader in case of a big video file size or in in case of a slow connection</p>
+                </div>
+
+                <!-- video switch button -->
+
+                <button class="switch-btn">
+                    <span>play</span>
+                    <span>pause</span>
+                    <span class="switch"></span>
+                </button>
+
+        </header>
+
+    </div>
+
+       
+
+
+
+ 
+    <script src="js/video.js"></script>
+</body>
+</html>
