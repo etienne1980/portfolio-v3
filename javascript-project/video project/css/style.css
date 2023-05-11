@@ -1,0 +1,226 @@
+
+@charset 'utf-8';
+/* Font family style */
+
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&family=Open+Sans&family=Roboto:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+
+/* variables */
+
+:root{
+    --bg-primary: #172B2B;
+    --bg-primary-200:#2D4040;
+    --bg-secondary-300:#327475;
+    --bg-tertiary-300:#A3D2D3;
+
+
+    --text-clr-primary: #A3D2D3;
+    --text-accent: #E1FC74;
+
+    --black:rgb(17, 17, 17);
+    --white:rgb(245, 245, 245);
+    --transparent:rgba(255, 255, 255, 0.081);
+
+    --btn-bg-primary:rgba(141, 177, 225, 0.79);
+    --btn-bg-hover:rgba(165, 191, 224, 0.79);
+    --btn-border-clr: rgb(26, 26, 26);
+
+    --shadow: 5px 5px 10px var(--bg-primary);
+
+    /* font size */
+    --fs-700: clamp(1.8rem, 10vw, 7rem);
+    --fs-600: clamp(1.5rem,10vw,3rem);
+    --fs-500: 1.45rem;
+    --fs-400: 1rem;
+
+    /* font weight */
+    --fw-700: 700;
+    --fw-600: 600;
+    --fw-500: 500;
+
+    /* margin and padding */
+    --padding-base: 1rem;
+    --margin-base: 1rem;
+
+    --padding-base-btn: .7em 2em;
+
+    /* typo styles */
+
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --ff-title:'Bigshot One', cursive;
+    --line-height-base: 1.5;
+    
+    /* transitions */
+
+    --transition: all 300ms ease-in-out;
+   
+    --border-base: 1px solid #000;
+    --radius-base: 0.3rem;
+    
+}
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width:100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ***************   *************** */
+
+
+/* breadcrumbs */
+
+.breadcrumbs{
+    display: flex;
+    list-style: none;
+    padding: 1rem 0;
+    background: linear-gradient(to right, rgb(111, 111, 111),rgb(37, 37, 37));
+
+
+}
+
+.breadcrumbs li{
+  margin: 0 10px;
+}
+
+.breadcrumbs li a{
+  text-decoration: none;
+  color: var(--clr-primary-4);
+}
+
+
+/*  */
+
+header{
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+
+.body-text{
+   color: var(--white);
+   padding: 1rem;
+}
+
+h1{
+    font-size: var(--fs-700);
+   padding: 1rem;
+
+}
+
+p{
+    font-size: var(--fs-500);
+    padding: 1rem;
+
+}
+
+
+/* controls buttons */
+
+.switch-btn{
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+    width: 12rem;
+    height: 2rem;
+    border-radius: var(--radius-base);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+}
+
+.switch-btn span{
+    display: inline-block;
+    font-size: .85rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: #327475;
+    
+
+}
+
+.switch{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-secondary-300);
+    border-radius: var(--radius-base);
+    /* margin: 0; */
+    /* display: block; */
+    transition: all 200ms ease-in-out;
+}
+
+
+/* the class slide will move the span 50% from its left (so moving to the right) of its containing box . will put this class on the button itself via js*/
+.slide .switch{
+    left: 50%; /* this will modify the left property set un on the switch above*/
+}
+
+
+/* this pseudo element which is a dark background, will make the controls for the video disappear .. hence, they have been removed from html */
+
+header::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(0, 0%, 7%, 0.7);
+    z-index: -1;
+
+}
+
+/* by default the preloader is visible */
+.preloader{
+    position: fixed;
+    inset: 0;
+    background-color: var(--white);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    visibility: visible;
+    transition: all 300ms ease-in-out;
+}
+
+
+/* class created to add to the window.load event. once load event happens add this class which hides the preloader img */
+.hide-preloader{
+    z-index: -999;
+    visibility: hidden;
+}

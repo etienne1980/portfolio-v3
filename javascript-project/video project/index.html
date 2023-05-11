@@ -1,58 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Video</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
-    <!-- fawesome cdn -->
+    <!-- seo -->
+    <meta name="description" content="How to use Javascript to make a burger menu">
+    <meta name="keyword" content="Javascript, burger menu">
+    <title>Menu</title>
+
+    <!-- preload -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/reviews.js" as="script">
+
+    <!-- fa icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  </head>
-  <body>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
     <!-- preloader -->
     <div class="preloader">
-      <img src="preloader.gif" alt="preloader" class="preloader__item" />
+        <img src="img/preloader.gif" alt="preloader image">
     </div>
 
 
-     <!-- breadcrumbs -->
-     <ul class="breadcrumbs">
-      <li><a href="../../index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
-      <li> > </li>
-      <li><a href="../../javascript.html">Javascript Projects</a></li>
-      <li> > </li>
-      <li><a href="#"></a>Video Project</li>
-    </ul>
 
+    <!-- breadcrumbs -->
+    <ul class="breadcrumbs">
+        <li><a href="../../index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+        <li> > </li>
+        <li><a href="../../javascript.html">Javascript Projects</a></li>
+        <li> > </li>
+        <li><a href="#"></a>Video project</li>
+    </ul>
 
     <!-- header -->
     <header>
 
-        <video  muted autoplay loop class="video-container">
-          <source src="./video.mp4" type="video/mp4" />
-        </video>
+            <video class="video-container" muted autoplay loop>
+                <source src="assets/video.mp4" type="video/mp4">
+            </video>
 
-        <div>
-          <h1>video project</h1>
-          <p class="description">Added video controls and preloader</p>
-        </div>
+            <div class="body-text">
+                <h1>Video Project</h1>
+                <p>Added controls (play/pause buttons) and video preloader</p>
+            </div>
 
-        <!-- video switch -->
-        <button class="switch-btn">
-          <span>play</span>
-          <span>pause</span>
-          <span class="switch"></span>
-        </button>
+            <!-- video switch button -->
+
+            <button class="switch-btn">
+                <span>play</span>
+                <span>pause</span>
+                <span class="switch"></span>
+            </button>
 
     </header>
 
+ 
+
+       
 
 
-    <!-- javascript -->
-    <script src="app.js"></script>
-  </body>
+
+ 
+    <script src="js/video.js"></script>
+</body>
 </html>
