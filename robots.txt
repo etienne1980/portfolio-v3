@@ -2,7 +2,7 @@ User-agent: *
 Disallow:/assets/
 Disallow:/*.docx$
 
-Sitemap: https://my-work-expression.netlify.app/sitemap.xml
+Sitemap: https://my-work-expression.netlify.app/my-sitemap.xml
 
 User-agent: Googlebot-Image
 Disallow: /
