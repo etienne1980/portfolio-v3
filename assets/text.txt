@@ -1,0 +1,5 @@
+presentation:
+
+"Passion led me to where I am today. After many years in sales and marketing, I knew that I wanted to explore my creativity and develop a new skill set. So I took a career break to fully immerse myself in learning front-end development.
+
+During this time, I discovered my passion for designing and building beautiful, functional websites. Every line of code I write is crafted with care to create a seamless user experience. I am thrilled to be able to combine my sales and marketing expertise with my new skills to help businesses succeed in the digital world."
