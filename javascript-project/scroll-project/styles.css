@@ -310,6 +310,11 @@ nav {
     
   }
 
+  .logo-name{
+    color: var(--clr-white);
+  }
+  
+
 
   .nav-center {
     width: 90vw;
