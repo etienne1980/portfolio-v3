@@ -204,19 +204,15 @@ main {
 
 
 
-/*  */
+/* ========================================= */
+/* ========================================= */
+/* ========================================= */
 
 /*
 =============== 
-Scroll
+  Scroll
 ===============
 */
-
-/*  */
-
-
-
-
 
 /* navbar */
 nav {
@@ -245,10 +241,6 @@ nav {
 .fixed-nav .links a:hover {
   color: var(--clr-secondary);
 }
-
-/* .fixed-nav .links-container {
-  height: auto !important;
-}  */
 
 
 .nav-header {
@@ -286,7 +278,9 @@ nav {
 }
 
 /* adding this class to show links */
-/* no need for this */
+
+/* no need for this .. reason see above comment */
+
 /* .show-links {
   height: 200px;
 } */
@@ -331,12 +325,14 @@ nav {
   }
 
 
+  /* remove the toggle button from 800px up */
   .nav-toggle {
     display: none;
   }
 
 
-  /* this has to stay here and this is what is happening: if I remain the toggle open in the mobile version and if this property is not here .. when I go to a bigger screen the .link-container will still be open with the height og the links open and mess up the design ... this is because we have added via js an inline style to the element ... more explanation look the ...o */
+  /* this class has to stay here and this is what is happening: if I remain the toggle open in the mobile version and if this class does not exist .. when I go to a bigger screen the .link-container will still be open with the height of the links open and it will mess up the design ... this is because we have added via js an inline style to the element on the mobile first set up ... with this media query I am saying: from 800px the height of the div.links-container is going to be auto overriding whatever inline style I added with js... more explanation look the v..o */
+
   .links-container {
     height: auto !important;
   }
@@ -441,6 +437,8 @@ footer p {
   margin-bottom: 0;
 }
 
+
+
 .top-link {
 
   position: fixed;
@@ -457,6 +455,7 @@ footer p {
   visibility: hidden;
   z-index: -100;
 }
+
 .show-link {
   visibility: visible;
   z-index: 100;
