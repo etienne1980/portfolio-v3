@@ -267,6 +267,10 @@ Breadcrumb style
     text-decoration: none;
 }
 
+.bc-link:hover{
+    color: var(--text-accent);
+}
+
 .active-bc {
     filter: brightness(130%);
 }
