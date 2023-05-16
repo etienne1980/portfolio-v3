@@ -262,12 +262,9 @@ Breadcrumb style
     font-family: custom_body;
 }
 
-.breadcrumb i {
+.bc-link{
     color: var(--text-clr-over-dark);
-}
-
-.breadcrumb i:hover {
-    color: var(--text-accent);
+    text-decoration: none;
 }
 
 .active-bc {
