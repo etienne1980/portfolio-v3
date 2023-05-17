@@ -283,6 +283,13 @@ Banner style
     border-top: 10px solid var(--bg-secondary-300);
 }
 
+.js-banner{
+
+    filter:
+    grayscale(85%)
+    hue-rotate(70deg);
+}
+
 /*=========================
 404 page style
 =========================*/
