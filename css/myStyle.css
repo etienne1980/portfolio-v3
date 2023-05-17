@@ -286,8 +286,7 @@ Banner style
 .js-banner{
 
     filter:
-    grayscale(94%)
-    hue-rotate(190deg);
+    grayscale(65%);
 }
 
 /*=========================
