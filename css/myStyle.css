@@ -76,13 +76,10 @@ p {
 Image style
 =========================*/
 
-/* @media only screen and (min-width: 768px) {
-  
-} */
-
-.hero {
-    height: 100vh;
-    height: 100svh;
+@media only screen and (min-width: 768px) {
+    .hero {
+        height: 80vh;
+    }
 }
 
 .intro-img {
