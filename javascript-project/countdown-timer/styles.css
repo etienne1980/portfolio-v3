@@ -231,3 +231,11 @@ Countdown Timer
   margin-bottom: 0.25rem;
   letter-spacing: var(--spacing);
 }
+
+h4.giveaway{
+  background-color: var(--clr-primary-1);
+  color: var(--clr-primary-10);
+  padding: 1rem;
+  line-height: 30px;
+  letter-spacing: 6px;
+}
