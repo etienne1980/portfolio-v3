@@ -477,3 +477,23 @@ footer p {
     transform: scale(1);
   }
 }
+
+
+/* breadcrumbs */
+
+.breadcrumbs{
+  display: flex;
+  list-style: none;
+  padding: 3rem 0;
+
+}
+
+.breadcrumbs li{
+  margin: 0 10px;
+}
+
+.breadcrumbs li a,
+.separator{
+  text-decoration: none;
+  color: var(--clr-primary-10);
+}
