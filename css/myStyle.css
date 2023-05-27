@@ -354,3 +354,7 @@ social icon styles
     background-color:#E1FC74 !important;
     filter: brightness(93%);
 }
+
+.dom-projects{
+    letter-spacing: 15px;
+}
