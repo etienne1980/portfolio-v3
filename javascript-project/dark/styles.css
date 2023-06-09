@@ -11,12 +11,19 @@ Global Styles
   --clr-grey: #64748b;
 }
 
-.dark-theme {
-  --clr-bcg: #282c35;
-  --clr-font: #fff;
-  --clr-primary: #ffa7c4;
+
+/* 
+  dark theme var - to apply it on the html element
+*/
+
+.dark-mode{
+  --clr-bcg: rgb(34, 37, 41);
+  --clr-font: rgb(174, 181, 188);
+  --clr-primary: rgb(95, 198, 154);
   --clr-grey: #cbd5e1;
 }
+
+
 
 *,
 ::after,
@@ -40,6 +47,7 @@ body {
 Navbar
 ===============
 */
+
 .nav-center {
   width: 90vw;
   max-width: 600px;
@@ -51,7 +59,7 @@ Navbar
 }
 .nav-center span {
   font-size: 2.5rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: 2px;
 }
 .btn {
@@ -72,6 +80,7 @@ Navbar
   width: 90vw;
   max-width: 600px;
   margin: 0 auto;
+
 }
 .post {
   margin-bottom: 3rem;
@@ -91,6 +100,7 @@ Navbar
 .post-info span {
   margin-right: 0.5rem;
 }
+
 
 
 /* breadcrumbs */
