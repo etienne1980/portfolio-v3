@@ -1,3 +1,16 @@
+// darkmode
+
+let btnDark = document.querySelector('.dark-toggle');
+
+btnDark.addEventListener('click', ()=>{
+  document.documentElement.classList.toggle('dark-mode');
+});
+
+
+
+// FILTERING
+
+
 let filteredProducts = [...products];
 
 const productsContainer = document.querySelector('.products-container');
