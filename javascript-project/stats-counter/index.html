@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stats Counter</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stats Number</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+  <ul class="breadcrumbs">
+    <li><a href="../../index.html">About</a></li>
+    <li> > </li>
+    <li><a href="../../javascript.html">Javascript Projects</a></li>
+    <li> > </li>
+    <li><a href="#"></a>Stats counter</li>
+  </ul>
+
+  <header>
+    <h1>Our Numbers</h1>
+    <button class="btn-dark">Dark mode</button>
+  </header>
+
+  <section class="counter-container">
+
+    <!-- first counter -->
+    <article class="single-counter">
+      <span class="number" data-value="500">0</span>
+      <p>Satisfied Clients</p>
+    </article>
+
+    <!-- second counter -->
+    <article class="single-counter">
+      <span class="number" data-value="1500">0</span>
+      <p>Completed projects</p>
+    </article>
+
+    <!-- third counter -->
+    <article class="single-counter">
+      <span class="number" data-value="2500">0</span>
+      <p>5 star google reviews</p>
+    </article>
 
 
-    <ul class="breadcrumbs">
-      <li><a href="../../index.html">About</a></li>
-      <li> > </li>
-      <li><a href="../../javascript.html">Javascript Projects</a></li>
-      <li> > </li>
-      <li><a href="#"></a>Count Up numbers</li>
-    </ul>
-
-    <!-- need a container section with 3 elements inside -->
-    <section>
-
-        <!-- single number -->
-        <article>
-          <span class="number" data-value="500">0</span>
-          <p>Succeeded Projects</p>
-        </article>
-        <!-- end of single number -->
-
-        <article>
-          <span class="number" data-value="14000">0</span>
-          <p>Happy client</p>
-        </article>
-        
-        <article>
-          <span class="number" data-value="1800">0</span>
-          <p>Working hours spent</p>
-        </article>
-
-    </section>
+  </section>
 
 
 
-    <script src="./app.js"></script>
-  </body>
+
+
+
+
+
+
+
+  <script src="app.js"></script>
+</body>
 </html>

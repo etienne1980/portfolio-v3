@@ -1,44 +1,43 @@
 
-// selecting all span. using the ...spread operator to get right away all item stored into an array so that we could use any array method on it
+// dark mode set up
 
-let items = [...document.querySelectorAll('.number')];
+let btnDarkMode = document.querySelector('.btn-dark');
+console.log(btnDarkMode);
 
-// creating a function which accepts the span element as parameters which are passed from the for each method
+btnDarkMode.addEventListener('click',()=>{
+    document.documentElement.classList.toggle('dark-mode');
+});
 
-let updateCount = (element) =>{
+// stats set up
 
-  let value = parseInt(element.dataset.value); // getting the dataset value of each span - as dataset returns a string, I have parsed it to work with Math object
-  // console.log(value);
+let spansElements = [...document.querySelectorAll('.number')];
+// console.log(spansElements);
 
-  let increment = Math.ceil(value / 1000);
+let increaseCount = (spans) => {
+    let statNumber = parseInt(spans.dataset.value);
+    // console.log(statNumber);
 
-  let initialValue = 0;
+    let increment = Math.ceil(statNumber / 1000);
 
-  
-  // using setInterval to invoke the function every specific amount of time. set interval takes 2 arguments: the call back func and the number of ms
+    let initialValue = 0;
 
+    let counterUp = setInterval(()=>{
 
-  let increaseCount = setInterval(()=>{
-    initialValue += increment;
+        initialValue += increment;
 
-    if(initialValue > value){
-      element.textContent = `${value}+`;
-      clearInterval(increaseCount);
-      return
-    }
+        if(initialValue > statNumber){
+            spans.textContent = `${statNumber}+`
+            clearInterval(counterUp);
+            return;
+        };
 
-
-    element.textContent = `${initialValue}+`;
-
-  }, 1) // each ms
-
-
-
+        
+        spans.textContent = `${initialValue}+`
+    }, 1);
 
 };
 
-items.forEach(items => {
-  updateCount(items);
+spansElements.forEach(spans =>{
+    increaseCount(spans);
 })
-
 
