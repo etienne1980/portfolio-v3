@@ -57,23 +57,45 @@ Navbar
   align-items: center;
   padding: 2rem 0;
 }
-.nav-center span {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+
+.title{
+  font-size: clamp(2em,5vw,3em);
 }
-.btn {
+
+/* ================================================================ */
+
+.dark-mode-btn {
+  display:block;
   background: var(--clr-primary);
   color: var(--clr-bcg);
-  padding: 0.25rem 0.5rem;
   border-radius: 5px;
   border-color: transparent;
-  text-transform: capitalize;
   transition: all 0.3s linear;
-  font-weight: bold;
-  letter-spacing: 2px;
   cursor: pointer;
 }
+
+.dark-light-icon{
+  width: 1em;
+  font-size: 2em;
+
+}
+
+/* by default moon icon is hidden */
+
+.moon{
+  display: none;
+}
+
+.dark-mode .moon{
+  display: inline;
+}
+
+.dark-mode .sun{
+  display: none;
+}
+
+
+/* ================================================================ */
 
 .articles {
   padding: 5rem 0;
@@ -99,24 +121,4 @@ Navbar
 }
 .post-info span {
   margin-right: 0.5rem;
-}
-
-
-
-/* breadcrumbs */
-
-.breadcrumbs{
-  display: flex;
-  list-style: none;
-  padding: 1rem 0;
-
-}
-
-.breadcrumbs li{
-  margin: 0 10px;
-}
-
-.breadcrumbs li a{
-  text-decoration: none;
-  color: var(--clr-primary);
 }

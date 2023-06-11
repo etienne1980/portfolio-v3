@@ -24,7 +24,7 @@
 
 let sectionArticleContainer = document.querySelector('.articles');
 
-let darkModeButton = document.querySelector('.btn');
+let darkModeButton = document.querySelector('.dark-mode-btn');
 
 //  step 3 and 4
 darkModeButton.addEventListener('click',()=>{
