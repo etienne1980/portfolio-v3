@@ -1,4 +1,15 @@
-/* 
+// dark mode
+
+let toggleDarkMode = document.querySelector('.dark-toggle');
+toggleDarkMode.addEventListener('click',()=>{
+    document.documentElement.classList.toggle('dark-mode');
+});
+
+
+
+
+
+/* Filter functinality 
 
     step.1
     make a copy of the products (taken from the product.js array)
