@@ -796,3 +796,23 @@ Single Product Page
   color: var(--clr-primary-4);
 }
 
+
+
+/* breadcrumbs */
+
+.breadcrumbss{
+  display: flex;
+  list-style: none;
+  padding: 1rem 0;
+
+}
+
+.breadcrumbss li{
+  margin: 0 10px;
+}
+
+.breadcrumbss li a{
+  text-decoration: none;
+  color: var(--clr-primary-4);
+}
+
