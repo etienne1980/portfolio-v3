@@ -8,9 +8,9 @@
 
   /* colors backgorund*/
 
-  --white: #e6e6e6;
-  --black: #4d4d4d;
-  --text-color: #686868;
+  --white: #f4f4f4;
+  --black: #343434;
+  --text-color: #505050;
   --btn-hover: #373737;
   --grey: #f6f6f6;
 
@@ -213,7 +213,7 @@ Products
   background: transparent;
   border-color: transparent;
   letter-spacing: var(--letterSpacing);
-  color: var(--grey-500);
+  color: var(--black);
   cursor: pointer;
   transition: all 100ms ease;
   font-size: 0.85rem;
@@ -313,5 +313,5 @@ Products
 
 .breadcrumbs li a{
   text-decoration: none;
-  color: var(--primary-800);
+  color: var(--black);
 }
