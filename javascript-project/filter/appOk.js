@@ -1,8 +1,19 @@
 // dark mode
+// dark mode
 
-let toggleDarkMode = document.querySelector('.dark-toggle');
-toggleDarkMode.addEventListener('click',()=>{
-    document.documentElement.classList.toggle('dark-mode');
+let switchBtn = document.querySelector('.switch-btn');
+console.log(switchBtn);
+
+switchBtn.addEventListener('click',()=>{
+    
+    if(!switchBtn.classList.contains('slide')){
+        switchBtn.classList.add('slide');
+        document.documentElement.classList.add('dark-mode');
+    }else{
+        switchBtn.classList.remove('slide');
+        document.documentElement.classList.remove('dark-mode');
+    };
+    
 });
 
 
