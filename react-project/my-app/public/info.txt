@@ -1,0 +1,49 @@
+
+
+
+let books = [
+
+    {
+        title:'lucky star',
+        author:'madonna',
+        img:'./img/img.jpg',
+    },
+
+    {
+        title:'tigerman',
+        author:'goldfrapp',
+        img:'./img/ice-cream.jpg',
+    },
+      
+];
+
+let BookList = () =>{
+
+    return <section className="booklist">
+
+        {books.map((item)=>{
+            let {title, author, img} = item;
+            return <Book author={author} title={title} img={img}/>
+        })}
+
+    </section>
+    
+};
+
+
+
+
+let Book = (props) =>{
+
+    console.log(props);
+    let {title, img, author, children} = props;
+    
+    return (
+        <article className="book">
+            <img src={img} alt={title} />
+            <h2>{title}</h2>
+            <h3>{author}</h3>
+
+        </article>
+    );
+};
