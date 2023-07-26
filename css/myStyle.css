@@ -11,6 +11,7 @@
 /* variables */
 
 :root {
+    /* index page and javascript page */
     --bg-primary-300: #172B2B;
     --bg-primary-200: #2D4040;
     --bg-secondary-300: #327475;
@@ -26,6 +27,27 @@
     --btn-bg-hover: rgba(165, 191, 224, 0.79);
     --btn-border-clr: rgb(26, 26, 26);
     --bg-card-light: #A3D2D3;
+
+    /* borders */
+
+    --border-img-dark: 7px solid #327475;
+    --border-accent: 2px solid #E1FC74;
+
+    /* react page */
+
+    --bg-react-primary: rgb(87, 115, 136);
+    --bg-react-secondary: rgb(220, 215, 211);
+
+    --text-clr-over-dark-react:#fff;
+    --text-clr-over-white-react:#000;
+
+    --text-accent-react:hsl(205, 53%, 81%);
+
+    /* borders */
+
+    --border-top-bottom-react:rgb(87, 115, 136);
+
+
     /* font size */
     --fs-700: clamp(1.8rem, 10vw, 2.9rem);
     --fs-600: clamp(1.5rem, 10vw, 2.2rem);
@@ -35,10 +57,6 @@
 
     /* --ff-title:'Abril Fatface',serif;--ff-body-regular: 'Poppins',sans-serif;*/
 
-    /* borders */
-
-    --border-img-dark: 7px solid #327475;
-    --border-accent: 2px solid #E1FC74;
 }
 
 /*=========================
@@ -133,6 +151,18 @@ Background Colors
     background-color: var(--black);
 }
 
+.bg-react-primary{
+    background-color: var(--bg-react-primary);
+}
+
+.bg-react-secondary{
+    background-color: var(--bg-react-secondary);
+}
+
+.bg-card-react{
+    background-color: var(--bg-react-secondary);
+}
+
 /*=========================
 Text Colors
 =========================*/
@@ -151,6 +181,10 @@ Text Colors
 
 .text-clr-accent {
     color: var(--text-accent);
+}
+
+.text-clr-over-dark-react{
+    color: var(--text-clr-over-dark-react);
 }
 
 /*=========================
@@ -201,6 +235,28 @@ Button style
     filter: brightness(150%);
 }
 
+/* button over light REACT */
+
+.button-bg-light--react {
+    background-color: var(--bg-react-secondary);
+}
+
+.button-text-dark-react {
+    color: var(--text-clr-over-dark-react);
+}
+
+.button-over-light-react {
+    padding: .3em 1em;
+    text-decoration: none;
+    border-radius: 7px;
+    filter: brightness(90%);
+    font-size: smaller;
+}
+
+.button-over-light-react:hover {
+    filter: brightness(150%);
+}
+
 /*=========================
 Cards style
 =========================*/
@@ -240,15 +296,24 @@ Links style
     filter: brightness(93%);
 }
 
+
+.nav-link-react{
+    color: var(--text-accent-react) !important;
+}
+
+
 .dropdown a:hover {
     color: #E1FC74;
     filter: brightness(93%);
     background-color: var(--black);
 }
 
+
+
 .card-body a {
     font-size: var(--fs-400);
 }
+
 
 /*=========================
 Breadcrumb style
@@ -271,9 +336,20 @@ Breadcrumb style
     color: var(--text-accent);
 }
 
+.bc-link-react{
+    color: var(--text-accent-react);
+    text-decoration: none;
+}
+
+.bc-link-react:hover{
+    filter: brightness(130%);
+}
+
 .active-bc {
     filter: brightness(130%);
 }
+
+
 
 /*=========================
 Banner style
@@ -356,5 +432,19 @@ social icon styles
 }
 
 .dom-projects{
-    letter-spacing: 12px;
+    letter-spacing: 8px;
+}
+
+.react-project{
+    letter-spacing: 8px;
+}
+
+
+.social-icon-react {
+    width: 23px;
+    background-color: var(--text-accent-react) !important;
+}
+
+.social-icon-react:hover {
+    filter: brightness(130%);
 }
