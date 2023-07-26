@@ -107,6 +107,7 @@ Image style
     filter: hue-rotate(170deg);
 }
 
+
 .intro-img::before {
     position: absolute;
     inset: 0;
@@ -447,4 +448,9 @@ social icon styles
 
 .social-icon-react:hover {
     filter: brightness(130%);
+}
+
+
+.button-react:hover{
+    filter: brightness(120%);
 }
