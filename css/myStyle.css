@@ -1,93 +1,88 @@
 @font-face {
-    font-family: custom_header;
-    src: url(../assets/fonts/AbrilFatface-Regular.woff2) format('woff2');
+  font-family: custom_header;
+  src: url(../assets/fonts/AbrilFatface-Regular.woff2) format("woff2");
 }
 
 @font-face {
-    font-family: custom_body;
-    src: url(../assets/fonts/Poppins-Regular.woff2) format('woff2');
+  font-family: custom_body;
+  src: url(../assets/fonts/Poppins-Regular.woff2) format("woff2");
 }
 
 /* variables */
 
 :root {
-    /* index page and javascript page */
-    --bg-primary-300: #172B2B;
-    --bg-primary-200: #2D4040;
-    --bg-secondary-300: #327475;
-    --bg-tertiary-300: #A3D2D3;
-    --text-clr-over-dark: #A3D2D3;
-    --text-clr-over-white: #172B2B;
-    --text-clr-over-white-secondary: #327475;
-    --text-accent: #E1FC74;
-    --black: rgb(17, 17, 17);
-    --white: rgb(245, 245, 245);
-    --transparent: rgba(255, 255, 255, 0.081);
-    --btn-bg-primary: rgba(141, 177, 225, 0.79);
-    --btn-bg-hover: rgba(165, 191, 224, 0.79);
-    --btn-border-clr: rgb(26, 26, 26);
-    --bg-card-light: #A3D2D3;
+  /* index page and javascript page */
+  --bg-primary-300: #172b2b;
+  --bg-primary-200: #2d4040;
+  --bg-secondary-300: #327475;
+  --bg-tertiary-300: #a3d2d3;
+  --text-clr-over-dark: #a3d2d3;
+  --text-clr-over-white: #172b2b;
+  --text-clr-over-white-secondary: #327475;
+  --text-accent: #e1fc74;
+  --black: rgb(17, 17, 17);
+  --white: rgb(245, 245, 245);
+  --transparent: rgba(255, 255, 255, 0.081);
+  --btn-bg-primary: rgba(141, 177, 225, 0.79);
+  --btn-bg-hover: rgba(165, 191, 224, 0.79);
+  --btn-border-clr: rgb(26, 26, 26);
+  --bg-card-light: #a3d2d3;
 
-    /* borders */
+  /* borders */
 
-    --border-img-dark: 7px solid #327475;
-    --border-accent: 2px solid #E1FC74;
+  --border-img-dark: 7px solid #327475;
+  --border-accent: 2px solid #e1fc74;
 
-    /* react page */
+  /* react page */
 
-    --bg-react-primary: rgb(87, 115, 136);
-    --bg-react-secondary: rgb(220, 215, 211);
+  --bg-react-primary: rgb(87, 115, 136);
+  --bg-react-secondary: rgb(220, 215, 211);
 
-    --text-clr-over-dark-react:#fff;
-    --text-clr-over-white-react:#000;
+  --text-clr-over-dark-react: #fff;
+  --text-clr-over-white-react: #000;
 
-    --text-accent-react:hsl(205, 53%, 81%);
+  --text-accent-react: hsl(205, 53%, 81%);
 
-    /* borders */
+  /* borders */
 
-    --border-top-bottom-react:rgb(87, 115, 136);
+  --border-top-bottom-react: rgb(87, 115, 136);
 
+  /* font size */
+  --fs-700: clamp(1.8rem, 10vw, 2.9rem);
+  --fs-600: clamp(1.5rem, 10vw, 2.2rem);
+  --fs-500: clamp(0.9rem, 10vw, 1.2rem);
+  --fs-400: clamp(1rem, 10vw, 1.1rem);
+  /* typo styles */
 
-    /* font size */
-    --fs-700: clamp(1.8rem, 10vw, 2.9rem);
-    --fs-600: clamp(1.5rem, 10vw, 2.2rem);
-    --fs-500: clamp(.9rem, 10vw, 1.2rem);
-    --fs-400: clamp(1rem, 10vw, 1.1rem);
-    /* typo styles */
-
-    /* --ff-title:'Abril Fatface',serif;--ff-body-regular: 'Poppins',sans-serif;*/
-
+  /* --ff-title:'Abril Fatface',serif;--ff-body-regular: 'Poppins',sans-serif;*/
 }
 
 /*=========================
 Body style
 =========================*/
 
-
-
-
 /*=========================
 Headings Style
 =========================*/
 
 h1 {
-    font-family: custom_header !important;
-    font-size: var(--fs-700) !important;
+  font-family: custom_header !important;
+  font-size: var(--fs-700) !important;
 }
 
 h2 {
-    font-family: custom_header !important;
-    font-size: var(--fs-600) !important;
+  font-family: custom_header !important;
+  font-size: var(--fs-600) !important;
 }
 
 h4 {
-    font-family: custom_body !important;
-    font-size: var(--fs-500) !important;
+  font-family: custom_body !important;
+  font-size: var(--fs-500) !important;
 }
 
 p {
-    font-family: custom_body !important;
-    font-size: var(--fs-400) !important;
+  font-family: custom_body !important;
+  font-size: var(--fs-400) !important;
 }
 
 /*=========================
@@ -95,73 +90,71 @@ Image style
 =========================*/
 
 @media only screen and (min-width: 768px) {
-    .hero {
-        height: 80vh;
-    }
+  .hero {
+    height: 80vh;
+  }
 }
 
 .intro-img {
-    position: relative;
-    max-width: 100%;
-    height: 500px;
-    filter: hue-rotate(170deg);
+  position: relative;
+  max-width: 100%;
+  height: 500px;
+  filter: hue-rotate(170deg);
 }
 
-
 .intro-img::before {
-    position: absolute;
-    inset: 0;
-    content: '';
-    background-image: url(../img/big/hero-home.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-image: url(../img/big/hero-home.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .reset-m-p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*=========================
 Background Colors
 =========================*/
 
-
 .bg-primary-300 {
-    background-color: var(--bg-primary-300);
+  background-color: var(--bg-primary-300);
 }
 
 .bg-primary-200 {
-    background-color: var(--bg-primary-200);
+  background-color: var(--bg-primary-200);
 }
 
 .bg-secondary-300 {
-    background-color: var(--bg-secondary-300);
+  background-color: var(--bg-secondary-300);
 }
 
 .bg-tertiary-300 {
-    background-color: var(--bg-tertiary-300);
+  background-color: var(--bg-tertiary-300);
 }
 
 .bg-white {
-    background-color: var(--white);
+  background-color: var(--white);
 }
 
 .bg-stained-black {
-    background-color: var(--black);
+  background-color: var(--black);
 }
 
-.bg-react-primary{
-    background-color: var(--bg-react-primary);
+.bg-react-primary {
+  background-color: var(--bg-react-primary);
 }
 
-.bg-react-secondary{
-    background-color: var(--bg-react-secondary);
+.bg-react-secondary {
+  background-color: var(--bg-react-secondary);
 }
 
-.bg-card-react{
-    background-color: var(--bg-react-secondary);
+.bg-card-react {
+  background-color: var(--bg-react-secondary);
 }
 
 /*=========================
@@ -169,23 +162,23 @@ Text Colors
 =========================*/
 
 .text-clr-over-white {
-    color: var(--text-clr-over-white);
+  color: var(--text-clr-over-white);
 }
 
 .text-clr-over-white-secondary {
-    color: var(--text-clr-over-white-secondary);
+  color: var(--text-clr-over-white-secondary);
 }
 
 .text-clr-over-dark {
-    color: var(--text-clr-over-dark);
+  color: var(--text-clr-over-dark);
 }
 
 .text-clr-accent {
-    color: var(--text-accent);
+  color: var(--text-accent);
 }
 
-.text-clr-over-dark-react{
-    color: var(--text-clr-over-dark-react);
+.text-clr-over-dark-react {
+  color: var(--text-clr-over-dark-react);
 }
 
 /*=========================
@@ -195,67 +188,67 @@ Button style
 /* button over dark */
 
 .button-bg-dark {
-    background-color: var(--bg-primary-300);
+  background-color: var(--bg-primary-300);
 }
 
 .button-text-light {
-    color: var(--text-clr-over-dark);
+  color: var(--text-clr-over-dark);
 }
 
 .button-over-dark {
-    padding: .3em 1em;
-    text-decoration: none;
-    border-radius: 7px;
-    filter: brightness(90%);
-    font-size: smaller;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  border-radius: 7px;
+  filter: brightness(90%);
+  font-size: smaller;
 }
 
 .button-over-dark:hover {
-    filter: brightness(110%);
+  filter: brightness(110%);
 }
 
 /* button over light */
 
 .button-bg-light {
-    background-color: var(--bg-tertiary-300);
+  background-color: var(--bg-tertiary-300);
 }
 
 .button-text-dark {
-    color: var(--text-clr-over-white);
+  color: var(--text-clr-over-white);
 }
 
 .button-over-light {
-    padding: .3em 1em;
-    text-decoration: none;
-    border-radius: 7px;
-    filter: brightness(90%);
-    font-size: smaller;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  border-radius: 7px;
+  filter: brightness(90%);
+  font-size: smaller;
 }
 
 .button-over-light:hover {
-    filter: brightness(150%);
+  filter: brightness(150%);
 }
 
 /* button over light REACT */
 
 .button-bg-light--react {
-    background-color: var(--bg-react-secondary);
+  background-color: var(--bg-react-secondary);
 }
 
 .button-text-dark-react {
-    color: var(--text-clr-over-dark-react);
+  color: var(--text-clr-over-dark-react);
 }
 
 .button-over-light-react {
-    padding: .3em 1em;
-    text-decoration: none;
-    border-radius: 7px;
-    filter: brightness(90%);
-    font-size: smaller;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  border-radius: 7px;
+  filter: brightness(90%);
+  font-size: smaller;
 }
 
 .button-over-light-react:hover {
-    filter: brightness(150%);
+  filter: brightness(150%);
 }
 
 /*=========================
@@ -263,107 +256,98 @@ Cards style
 =========================*/
 
 .card-image-filter {
-    border: 5px solid var(--bg-primary-300);
-    filter: grayscale(80%);
+  border: 5px solid var(--bg-primary-300);
+  filter: grayscale(80%);
 }
 
 .card-image-filter:hover {
-    filter: grayscale(80%) opacity(88%);
+  filter: grayscale(80%) opacity(88%);
 }
 
 .bg-card {
-    background-color: var(--bg-card-light);
+  background-color: var(--bg-card-light);
 }
 
 h5 {
-    margin-bottom: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .card-js:hover {
-    cursor: pointer;
-    filter: brightness(130%);
+  cursor: pointer;
+  filter: brightness(130%);
 }
 
 .card-border-accent {
-    border: var(--border-accent);
+  border: var(--border-accent);
 }
 
 /*=========================
 Links style
 =========================*/
 
-.nav-link:hover{
-    color: #E1FC74;
-    filter: brightness(93%);
+.nav-link:hover {
+  color: #e1fc74;
+  filter: brightness(93%);
 }
 
-
-.nav-link-react{
-    color: var(--text-accent-react) !important;
+.nav-link-react {
+  color: var(--text-accent-react) !important;
 }
-
 
 .dropdown a:hover {
-    color: #E1FC74;
-    filter: brightness(93%);
-    background-color: var(--black);
+  color: #e1fc74;
+  filter: brightness(93%);
+  background-color: var(--black);
 }
-
-
 
 .card-body a {
-    font-size: var(--fs-400);
+  font-size: var(--fs-400);
 }
-
 
 /*=========================
 Breadcrumb style
 =========================*/
 
 .myBreadcrumb {
-    --bc-size: clamp(0.6rem, 15vw, 1rem);
-    font-size: var(--bc-size);
-    color: var(--text-clr-over-dark);
-    filter: brightness(90%);
-    font-family: custom_body;
+  --bc-size: clamp(0.6rem, 15vw, 1rem);
+  font-size: var(--bc-size);
+  color: var(--text-clr-over-dark);
+  filter: brightness(90%);
+  font-family: custom_body;
 }
 
-.bc-link{
-    color: var(--text-clr-over-dark);
-    text-decoration: none;
+.bc-link {
+  color: var(--text-clr-over-dark);
+  text-decoration: none;
 }
 
-.bc-link:hover{
-    color: var(--text-accent);
+.bc-link:hover {
+  color: var(--text-accent);
 }
 
-.bc-link-react{
-    color: var(--text-accent-react);
-    text-decoration: none;
+.bc-link-react {
+  color: var(--text-accent-react);
+  text-decoration: none;
 }
 
-.bc-link-react:hover{
-    filter: brightness(130%);
+.bc-link-react:hover {
+  filter: brightness(130%);
 }
 
 .active-bc {
-    filter: brightness(130%);
+  filter: brightness(130%);
 }
-
-
 
 /*=========================
 Banner style
 =========================*/
 
 .banner-border {
-    border-top: 10px solid var(--bg-secondary-300);
+  border-top: 10px solid var(--bg-secondary-300);
 }
 
-.js-banner{
-
-    filter:
-    grayscale(65%);
+.js-banner {
+  filter: grayscale(65%);
 }
 
 /*=========================
@@ -371,86 +355,84 @@ Banner style
 =========================*/
 
 .error-page {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    place-items: center center;
-    background-color: var(--bg-secondary-300);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center center;
+  background-color: var(--bg-secondary-300);
 }
 
 .img-404 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    max-width: 90%;
-    height: 70%;
-    padding: 1rem;
-    isolation: isolate;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 90%;
+  height: 70%;
+  padding: 1rem;
+  isolation: isolate;
 }
 
 .img-404::before {
-    content: '';
-    background-image: url(../img/big/404.webp);
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-    opacity: .9;
+  content: "";
+  background-image: url(../img/big/404.webp);
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.9;
 }
 
 .title-404 {
-    color: var(--text-clr-over-dark);
+  color: var(--text-clr-over-dark);
 }
 
 .link-404 {
-    padding: .4em 1em;
-    text-decoration: none;
-    border-radius: 10px;
-    background-color: var(--bg-primary-300);
-    color: var(--text-clr-over-dark);
-    filter: brightness(80%);
+  padding: 0.4em 1em;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: var(--bg-primary-300);
+  color: var(--text-clr-over-dark);
+  filter: brightness(80%);
 }
 
 .link-404:hover {
-    filter: brightness(100%);
+  filter: brightness(100%);
 }
 
 /*=========================
 social icon styles
 =========================*/
 
-.social-icon{
-    width: 23px;
-    background-color: var(--bg-card-light) !important;
+.social-icon {
+  width: 23px;
+  background-color: var(--bg-card-light) !important;
 }
 
-.social-icon:hover{
-    background-color:#E1FC74 !important;
-    filter: brightness(93%);
+.social-icon:hover {
+  background-color: #e1fc74 !important;
+  filter: brightness(93%);
 }
 
-.dom-projects{
-    letter-spacing: 8px;
+.dom-projects {
+  letter-spacing: 8px;
 }
 
-.react-project{
-    letter-spacing: 8px;
+.react-project {
+  letter-spacing: 8px;
 }
-
 
 .social-icon-react {
-    width: 23px;
-    background-color: var(--text-accent-react) !important;
+  width: 23px;
+  background-color: var(--text-accent-react) !important;
 }
 
 .social-icon-react:hover {
-    filter: brightness(130%);
+  filter: brightness(130%);
 }
 
-
-.button-react:hover{
-    filter: brightness(120%);
+.button-react:hover {
+  filter: brightness(120%);
 }

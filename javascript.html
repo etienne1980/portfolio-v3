@@ -1,237 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My name is Andrea and I am a Front End Developer. I design and build beautiful and efficient website">
-    <meta name="keyword" content="portfolio of a front end developer, portfolio of a web designer, javascript portfolio of a front end developer, web development portfolio based on html, css and javascript">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="My name is Andrea and I am a Front End Developer. I design and build beautiful and efficient website"
+    />
+    <meta
+      name="keyword"
+      content="portfolio of a front end developer, portfolio of a web designer, javascript portfolio of a front end developer, web development portfolio based on html, css and javascript"
+    />
     <!-- preload -->
-    <link rel="preload" href="css/global-styles.css" as="style">
-    <link rel="preload" href="js/reviews.js" as="script">
+    <link rel="preload" href="css/global-styles.css" as="style" />
+    <link rel="preload" href="js/reviews.js" as="script" />
     <title>Javascript Projects</title>
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- aos css -->
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/aos.css" />
     <!-- my css style -->
-    <link rel="stylesheet" href="css/myStyle.css">
-
-</head> 
-<body>
-    
+    <link rel="stylesheet" href="css/myStyle.css" />
+  </head>
+  <body>
     <!-- start of main grid -->
 
     <div class="container-fluid">
+      <!-- Header + Nav -->
 
-        <!-- Header + Nav -->
+      <header class="row justify-content-center bg-stained-black">
+        <nav class="col-md-12 navbar navbar-expand-md">
+          <div class="container-fluid">
+            <!-- social icon -->
 
-        <header class="row justify-content-center bg-stained-black">
-
-            <nav class="col-md-12 navbar navbar-expand-md">
-
-                <div class="container-fluid">
-                    
-                    <!-- social icon -->
-                    
-                    <!-- <div class="social-icon">
+            <!-- <div class="social-icon">
                         <a class="lead social-icon px-2 text-clr-over-dark" href="https://www.linkedin.com/in/andrea-de-santis-b54298105/" target="_blank" aria-label="visit my linkedin profile"><i class="bi bi-linkedin"></i></a>
                         <a class="lead social-icon px-2 text-clr-over-dark" href="https://github.com/etienne1980?tab=repositories" target="_blank" aria-label="visit my github repositories"><i class="bi bi-github"></i></a>
                     </div> -->
 
-                    <div>
-                        <a href="https://github.com/etienne1980?tab=repositories" target="_blank"><img role="img" class="social-icon rounded-5" src="img/svg/github.svg" alt="social-icon"></a>
-                        <a href="https://www.linkedin.com/in/andrea-de-santis-b54298105/" target="_blank"><img role="img" class="social-icon mx-1 rounded-5" src="img/svg/linkedin.svg" alt="social-icon"></a>
-                    </div>
+            <div>
+              <a
+                href="https://github.com/etienne1980?tab=repositories"
+                target="_blank"
+                ><img
+                  role="img"
+                  class="social-icon rounded-5"
+                  src="img/svg/github.svg"
+                  alt="social-icon"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/andrea-de-santis-b54298105/"
+                target="_blank"
+                ><img
+                  role="img"
+                  class="social-icon mx-1 rounded-5"
+                  src="img/svg/linkedin.svg"
+                  alt="social-icon"
+              /></a>
+            </div>
 
-                    <button class="navbar-toggler bg-tertiary-300" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+            <button
+              class="navbar-toggler bg-tertiary-300"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-                    <div class="justify-content-center collapse navbar-collapse" id="navbarNavDropdown">
-
-                            <ul class="navbar-nav">
-
-                                <li class="nav-item">
-                                    <a class="nav-link text-clr-over-dark" aria-current="page" href="index.html">About</a>
-                                </li>
-                                <!-- <li class="nav-item">
+            <div
+              class="justify-content-center collapse navbar-collapse"
+              id="navbarNavDropdown"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-clr-over-dark"
+                    aria-current="page"
+                    href="index.html"
+                    >About</a
+                  >
+                </li>
+                <!-- <li class="nav-item">
                                     <a class="nav-link" href="#">Features</a>
                                 </li> -->
-                                <!-- <li class="nav-item">
+                <!-- <li class="nav-item">
                                     <a class="nav-link" href="#">Pricing</a>
                                 </li> -->
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle text-clr-over-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Portfolio</a>
-                                    <ul class="dropdown-menu bg-stained-black">
-                                        <li><a class="dropdown-item text-clr-over-dark" href="#">Javascript</a></li>
-                                        <li><a class="dropdown-item text-clr-over-dark" href="react.html">React</a></li>
-                                        <li><a class="dropdown-item text-clr-over-dark" href="https://yogalab.netlify.app/">Bootstrap</a></li>
-                                        <!-- <li><a class="dropdown-item" href="#">React</a></li> -->
-                                        <!-- <li><a class="dropdown-item" href="#">WordPress</a></li> -->
-                                    </ul>
-                                </li>
-                                
-                            </ul>
-                    </div>
-                </div>
-            </nav>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-clr-over-dark"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Portfolio</a
+                  >
+                  <ul class="dropdown-menu bg-stained-black">
+                    <li>
+                      <a class="dropdown-item text-clr-over-dark" href="#"
+                        >Javascript</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-clr-over-dark"
+                        href="react.html"
+                        >React</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-clr-over-dark"
+                        href="https://yogalab.netlify.app/"
+                        >Bootstrap</a
+                      >
+                    </li>
+                    <!-- <li><a class="dropdown-item" href="#">React</a></li> -->
+                    <!-- <li><a class="dropdown-item" href="#">WordPress</a></li> -->
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- start intro row -->
 
-        </header>
-<!-- start intro row -->
-        
-        <!-- breadcrumbs Navigation -->
-        <div class="row justify-content-center bg-stained-black">
+      <!-- breadcrumbs Navigation -->
+      <div class="row justify-content-center bg-stained-black">
+        <nav
+          class="container-fluid"
+          style="--bs-breadcrumb-divider: '>'"
+          aria-label="breadcrumb"
+        >
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item myBreadcrumb" aria-current="page">
+              <a class="bc-link" href="index.html">about</a>
+            </li>
+            <li class="breadcrumb-item myBreadcrumb" aria-current="page">
+              portfolio
+            </li>
+            <li
+              class="breadcrumb-item myBreadcrumb active-bc"
+              aria-current="page"
+            >
+              Javascript
+            </li>
+          </ol>
+        </nav>
+      </div>
 
-            <nav class="container-fluid"  style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item myBreadcrumb" aria-current="page"><a class="bc-link" href="index.html">about</a></li>
-                  <li class="breadcrumb-item myBreadcrumb" aria-current="page">portfolio</li>
-                  <li class="breadcrumb-item myBreadcrumb active-bc" aria-current="page">Javascript</li>
-                </ol>
-            </nav>
+      <!-- start intro row -->
 
+      <div class="row justify-content-center align-items-center">
+        <div
+          class="col-md-6 d-flex align-items-center justify-content-center bg-tertiary-300 hero"
+        >
+          <picture>
+            <source
+              media="(max-width:576.9px)"
+              srcset="img/thumb/js-banner-thumb.webp"
+            />
+            <source
+              media="(min-width:577px)"
+              srcset="img/big/js-banner-big.webp"
+            />
+            <img
+              class="p-4 p-md-0 js-banner w-100 h-auto"
+              src="img/big/js-banner-big.webp"
+              alt="picture of a wireframe with different section exploring design ideas"
+            />
+          </picture>
         </div>
 
-        <!-- start intro row -->
+        <div class="col-md-6 bg-white">
+          <h1 class="text-clr-over-white py-4">
+            TAKE A LOOK
+            <span class="text-clr-over-white-secondary"
+              >AT SOME OF MY CREATIONS</span
+            >
+          </h1>
+        </div>
+      </div>
 
-        <div class="row justify-content-center align-items-center">
+      <!-- start of project cards -->
 
-
-            <div class="col-md-6 d-flex align-items-center justify-content-center bg-tertiary-300 hero">
-                
-                <picture>
-                    <source media="(max-width:576.9px)" srcset="img/thumb/js-banner-thumb.webp">
-                    <source media="(min-width:577px)" srcset="img/big/js-banner-big.webp">
-                    <img class="p-4 p-md-0 js-banner w-100 h-auto" src="img/big/js-banner-big.webp" alt="picture of a wireframe with different section exploring design ideas">
-                </picture>
-            </div>
-
-            <div class="col-md-6 bg-white">
-                <h1 class="text-clr-over-white py-4">TAKE A LOOK <span class="text-clr-over-white-secondary">AT SOME OF MY CREATIONS</span></h1>
-            </div>
-
-        </div>    
-       
-        <!-- start of project cards -->
-
-        <div class="row justify-content-center bg-primary-300">
-
-            <div class="bg-primary-300 banner-border justify-content-center py-5">
-                <h2 class="text-clr-accent text-centerx py-2 text-center dom-projects">JAVASCRIPT PROJECTS</h2>
-            </div>
-     
-
-            <div class="col-md-10 d-flex flex-wrap justify-content-around align-items-center my-3">
-
-                <div class="card card-js rounded-4 bg-primary-200 m-2" style="width: 12rem;height: 12rem;" data-aos="zoom-in" >
-                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <h4 class="card-title text-clr-over-dark">Dark Mode</h4>
-                        <a href="javascript-project/dark-mode/" class="button-over-dark button-bg-light text-clr-over-white">take a look</a>
-                    </div>
-                </div>
-
-                <div class="card card-js rounded-4 bg-primary-200 m-2" style="width: 12rem;height: 12rem;" data-aos="zoom-in" >
-                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <h4 class="card-title text-clr-over-dark">Scroll Event</h4>
-                        <a href="javascript-project/scroll-project/" class="button-over-dark button-bg-light text-clr-over-white">take a look</a>
-                    </div>
-                </div>
-
-                <div class="card card-js rounded-4 bg-primary-200 m-2" style="width: 12rem;height: 12rem;" data-aos="zoom-in" >
-                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <h4 class="card-title text-clr-over-dark">Stats Counter</h4>
-                        <a href="javascript-project/stats-counter/" class="button-over-dark button-bg-light text-clr-over-white">take a look</a>
-                    </div>
-                </div>
-
-                <div class="card card-js rounded-4 bg-primary-200 m-2" style="width: 12rem;height: 12rem;" data-aos="zoom-in" >
-                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <h4 class="card-title text-clr-over-dark">Filter Items</h4>
-                        <a href="javascript-project/filter/" class="button-over-dark button-bg-light text-clr-over-white">take a look</a>
-                    </div>
-                </div>
-
-                <div class="card card-js rounded-4 bg-primary-200 m-2" style="width: 12rem;height: 12rem;" data-aos="zoom-in" >
-                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <h4 class="card-title text-clr-over-dark">Web Store</h4>
-                        <a href="javascript-project/webstore" class="button-over-dark button-bg-light text-clr-over-white">take a look</a>
-                    </div>
-                </div>
-
-                <div class="card card-js rounded-4 bg-primary-200 m-2" style="width: 12rem;height: 12rem;" data-aos="zoom-in" >
-                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <h4 class="card-title text-clr-over-dark">Accordion</h4>
-                        <a href="javascript-project/accordeon" class="button-over-dark button-bg-light text-clr-over-white">take a look</a>
-                    </div>
-                </div>
-
-                <div class="card card-js rounded-4 bg-primary-200 m-2" style="width: 12rem;height: 12rem;" data-aos="zoom-in" >
-                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <h4 class="card-title text-clr-over-dark">Wiki</h4>
-                        <a href="javascript-project/wiki/" class="button-over-dark button-bg-light text-clr-over-white">take a look</a>
-                    </div>
-                </div>
-
-                <div class="card card-js rounded-4 bg-primary-200 m-2" style="width: 12rem;height: 12rem;" data-aos="zoom-in" >
-                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <h4 class="card-title text-clr-over-dark">Slider</h4>
-                        <a href="javascript-project/slider/" class="button-over-dark button-bg-light text-clr-over-white">take a look</a>
-                    </div>
-                </div>
-
-                <div class="card card-js rounded-4 bg-primary-200 m-2" style="width: 12rem;height: 12rem;" data-aos="zoom-in" >
-                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <h4 class="card-title text-clr-over-dark text-center">Cocktail API</h4>
-                        <a href="javascript-project/cocktail" class="button-over-dark button-bg-light text-clr-over-white">take a look</a>
-                    </div>
-                </div>
-
-                <div class="card card-js rounded-4 bg-primary-200 m-2" style="width: 12rem;height: 12rem;" data-aos="zoom-in" >
-                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <h4 class="card-title text-clr-over-dark">Video</h4>
-                        <a href="javascript-project/video-project/" class="button-over-dark button-bg-light text-clr-over-white">take a look</a>
-                    </div>
-                </div>
-
-                 <div class="card card-js rounded-4 bg-primary-200 m-2" style="width: 12rem;height: 12rem;" data-aos="zoom-in" >
-                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <h4 class="card-title text-clr-over-dark text-center">Lorem Ipsum text gen</h4>
-                        <a href="javascript-project/lorem/" class="button-over-dark button-bg-light text-clr-over-white">take a look</a>
-                    </div>
-                </div>
-                
-                <div class="card card-js rounded-4 bg-primary-200 m-2" style="width: 12rem;height: 12rem;" data-aos="zoom-in" >
-                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <h4 class="card-title text-clr-over-dark text-center">Flash Sale countdown</h4>
-                        <a href="javascript-project/countdown-timer/" class="button-over-dark button-bg-light text-clr-over-white">take a look</a>
-                    </div>
-                </div>
-
-            </div>
-
+      <div class="row justify-content-center bg-primary-300">
+        <div class="bg-primary-300 banner-border justify-content-center py-5">
+          <h2
+            class="text-clr-accent text-centerx py-2 text-center dom-projects"
+          >
+            JAVASCRIPT PROJECTS
+          </h2>
         </div>
 
+        <div
+          class="col-md-10 d-flex flex-wrap justify-content-around align-items-center my-3"
+        >
+          <div
+            class="card card-js rounded-4 bg-primary-200 m-2"
+            style="width: 12rem; height: 12rem"
+            data-aos="zoom-in"
+          >
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-center"
+            >
+              <h4 class="card-title text-clr-over-dark">Dark Mode</h4>
+              <a
+                href="javascript-project/dark-mode/"
+                class="button-over-dark button-bg-light text-clr-over-white"
+                >take a look</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="card card-js rounded-4 bg-primary-200 m-2"
+            style="width: 12rem; height: 12rem"
+            data-aos="zoom-in"
+          >
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-center"
+            >
+              <h4 class="card-title text-clr-over-dark">Scroll Event</h4>
+              <a
+                href="javascript-project/scroll-project/"
+                class="button-over-dark button-bg-light text-clr-over-white"
+                >take a look</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="card card-js rounded-4 bg-primary-200 m-2"
+            style="width: 12rem; height: 12rem"
+            data-aos="zoom-in"
+          >
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-center"
+            >
+              <h4 class="card-title text-clr-over-dark">Stats Counter</h4>
+              <a
+                href="javascript-project/stats-counter/"
+                class="button-over-dark button-bg-light text-clr-over-white"
+                >take a look</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="card card-js rounded-4 bg-primary-200 m-2"
+            style="width: 12rem; height: 12rem"
+            data-aos="zoom-in"
+          >
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-center"
+            >
+              <h4 class="card-title text-clr-over-dark">Filter Items</h4>
+              <a
+                href="javascript-project/filter/"
+                class="button-over-dark button-bg-light text-clr-over-white"
+                >take a look</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="card card-js rounded-4 bg-primary-200 m-2"
+            style="width: 12rem; height: 12rem"
+            data-aos="zoom-in"
+          >
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-center"
+            >
+              <h4 class="card-title text-clr-over-dark">Web Store</h4>
+              <a
+                href="javascript-project/webstore"
+                class="button-over-dark button-bg-light text-clr-over-white"
+                >take a look</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="card card-js rounded-4 bg-primary-200 m-2"
+            style="width: 12rem; height: 12rem"
+            data-aos="zoom-in"
+          >
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-center"
+            >
+              <h4 class="card-title text-clr-over-dark">Accordion</h4>
+              <a
+                href="javascript-project/accordeon"
+                class="button-over-dark button-bg-light text-clr-over-white"
+                >take a look</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="card card-js rounded-4 bg-primary-200 m-2"
+            style="width: 12rem; height: 12rem"
+            data-aos="zoom-in"
+          >
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-center"
+            >
+              <h4 class="card-title text-clr-over-dark">Wiki</h4>
+              <a
+                href="javascript-project/wiki/"
+                class="button-over-dark button-bg-light text-clr-over-white"
+                >take a look</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="card card-js rounded-4 bg-primary-200 m-2"
+            style="width: 12rem; height: 12rem"
+            data-aos="zoom-in"
+          >
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-center"
+            >
+              <h4 class="card-title text-clr-over-dark">Slider</h4>
+              <a
+                href="javascript-project/slider/"
+                class="button-over-dark button-bg-light text-clr-over-white"
+                >take a look</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="card card-js rounded-4 bg-primary-200 m-2"
+            style="width: 12rem; height: 12rem"
+            data-aos="zoom-in"
+          >
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-center"
+            >
+              <h4 class="card-title text-clr-over-dark text-center">
+                Cocktail API
+              </h4>
+              <a
+                href="javascript-project/cocktail"
+                class="button-over-dark button-bg-light text-clr-over-white"
+                >take a look</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="card card-js rounded-4 bg-primary-200 m-2"
+            style="width: 12rem; height: 12rem"
+            data-aos="zoom-in"
+          >
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-center"
+            >
+              <h4 class="card-title text-clr-over-dark">Video</h4>
+              <a
+                href="javascript-project/video-project/"
+                class="button-over-dark button-bg-light text-clr-over-white"
+                >take a look</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="card card-js rounded-4 bg-primary-200 m-2"
+            style="width: 12rem; height: 12rem"
+            data-aos="zoom-in"
+          >
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-center"
+            >
+              <h4 class="card-title text-clr-over-dark text-center">
+                Lorem Ipsum text gen
+              </h4>
+              <a
+                href="javascript-project/lorem/"
+                class="button-over-dark button-bg-light text-clr-over-white"
+                >take a look</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="card card-js rounded-4 bg-primary-200 m-2"
+            style="width: 12rem; height: 12rem"
+            data-aos="zoom-in"
+          >
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-center"
+            >
+              <h4 class="card-title text-clr-over-dark text-center">
+                Flash Sale countdown
+              </h4>
+              <a
+                href="javascript-project/countdown-timer/"
+                class="button-over-dark button-bg-light text-clr-over-white"
+                >take a look</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- end of main grid -->
 
-  <!-- js bootstrap -->
-  <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- js bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 
-  <!-- js aos -->
-  <script src="js/aos.js"></script>
+    <!-- js aos -->
+    <script src="js/aos.js"></script>
 
-  <script>
+    <script>
       AOS.init({
-          duration:500,
-          delay:300,
+        duration: 500,
+        delay: 300,
       });
-  </script>
+    </script>
 
-  <!-- my js -->
-  <script src="js/myApp.js"></script>
-  
-</body>
+    <!-- my js -->
+    <script src="js/myApp.js"></script>
+  </body>
 </html>
